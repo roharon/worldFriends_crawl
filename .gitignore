@@ -168,6 +168,8 @@ venv.bak/
 
 
 # End of https://www.gitignore.io/api/python,pycharm
-.phantomjs/
+phantomjs/
 *.xml
 *.xml
+token.py
+.idea/workspace.xml

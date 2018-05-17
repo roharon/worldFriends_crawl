@@ -3,7 +3,7 @@ import telegram
 from crawl import crawl_wf
 
 def send_alert(sentence=None):
-    my_token = 'YOUR TOKEN KEY'
+    my_token = 'SECRET KEY'
 
     bot = telegram.Bot(token=my_token)
     updates = bot.getUpdates()
