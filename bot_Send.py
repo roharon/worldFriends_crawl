@@ -12,7 +12,6 @@ def send_alert(sentence=None):
 
     # print(chat_id)
 
-    #bot.send_message(chat_id=roharon, text='훕포메이션 학점알림이 - 텔레그램\n' + sentence)
     bot.send_message(chat_id=roharon, text='월프공지\n' + sentence)
     #bot.send_message(chat_id=chat_id,text='월프공지')
 
