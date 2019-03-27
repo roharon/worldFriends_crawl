@@ -18,7 +18,7 @@ def crawl_wf():
 
     print(article)
 
-    if '2018/05/16' not in article[0]:
+    if '2019/03/27' not in article[0]:
         return [1,article[0]]
     else:
         [0,'']
