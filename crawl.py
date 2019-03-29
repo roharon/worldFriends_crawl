@@ -1,3 +1,5 @@
+##it
+
 import requests
 from bs4 import BeautifulSoup
 import lxml
@@ -9,20 +11,26 @@ def crawl_wf():
     #print(html)
     soup = BeautifulSoup(html,'lxml')
 
-    title = soup.find_all('tr', class_='top')
+    #title = soup.find('td', class_='left')
+    title = soup.find_all('td', class_="left")
     #print(title)
 
     article = []
+    #print(title)
     for i in title:
         article.append(i.text)
 
-    print(article)
-
-    if '2019/03/27' not in article[0]:
-        return [1,article[0]]
-    else:
-        [0,'']
-
+    #print(article)
+    
+    try:
+        if '모집 사전 공지 및 설명회 개최 안내' not in article[0]:
+            print(article[0])
+            return [1, article[0]]
+        else:
+            print("아직 안올라옴")
+            return [0, article[0]]
+    except:
+        pass
 
 if __name__ == '__main__':
     crawl_wf()

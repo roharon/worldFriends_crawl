@@ -19,11 +19,11 @@ def send_alert(sentence=None):
 
     # print(chat_id)
 
-    bot.send_message(chat_id=chat_id, text='월프공지\n' + sentence.replace('\n', ' ').replace('*',''))
-    #bot.send_message(chat_id=chat_id,text='월프공지')
+    bot.send_message(chat_id=chat_id, text='월프 공지 떴당!!\n' + sentence.replace('\n', ' ').replace('*',''))
 
 def send_telegram():
     result = crawl_wf()
+    print(result)
     if result[0] ==1:
         send_alert(result[1])
     else:
