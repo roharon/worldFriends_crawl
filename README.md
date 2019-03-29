@@ -51,8 +51,9 @@ python bot_Send.py
 0 0 0 0 0 ~~/bot_Send.py
 
 """
-2018/05/16 기준으로 최신 글을 크롤링하는 소스입니다
-crawl.py 의 Line 21 날짜를 수정하여 사용하여도 작동합니다.
+제목을 기준으로 최신 글을 크롤링하는 소스입니다.
+(페이지구조가 변경되어 제목을 통해 크롤링 하고 있습니다)
+crawl.py 의 Line 26 의 ` '모집 사전 공지 및 설명회 개최 안내' 내용 변경을 통해 사용가능합니다.
 """
 ```
 
@@ -63,6 +64,7 @@ crawl.py 의 Line 21 날짜를 수정하여 사용하여도 작동합니다.
 ### 미리보기
 
 ![](https://github.com/roharon/worldFriends_crawl/blob/master/preview/KIV%20alert%20preview.PNG?raw=true)
+![image](https://user-images.githubusercontent.com/4939738/55229400-3883a380-5260-11e9-8fc0-391d780fd0e9.png)
 
 
 
